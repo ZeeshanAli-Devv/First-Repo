@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QUIZ WEB</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-blue-50">
+        <!-- Logo -->
+        <div class="flex justify-center items-center py-3">
+            <img src="images/mg-logo.png" alt="mcqs pic" class="w-44" />
+        </div>
+        <!-- Mcq's -->
+        <div class="flex flex-col items-center justify-around gap-12">
+            <!-- Question Box 1 -->
+            <div class="lg:w-6/12 md:w-10/12 w-full pt-10 px-2">
+                <div class="border-2 border-[#8758EA] rounded-2xl">
+                    <div class="bg-[#8758EA] rounded-t-xl py-12 flex justify-center items-center">
+                        <p class="text-white lg:text-xl text-center">A rainbow contains how many colours?</p>
+                    </div>
+                    <!-- Options A-->
+                    <div class="p-4">
+                        <div class="border-2 border-[#8758EA] rounded-xl group hover:bg-[#8758EA] hover:text-white cursor-pointer flex items-center px-4 py-1.5" onclick="getAns('Seven','p1')">
+                            <div class="bg-[#8758EA] lg:w-12 lg:h-12 h-8 w-8 rounded-full flex justify-center items-center group-hover:bg-white lg:w-[7.3%] md:w-[6%] w-[15%]">
+                                <p class="text-white group-hover:text-[#8758EA]">A</p>
+                            </div>
+                            <div class="w-[85%] text-center">
+                                <p class="group-hover:text-white lg:text-2xl text-[#8758EA] font-semibold">Seven</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm ml-4 hidden" id="p1">Correct Answer</p>
+
+                    <!-- Options B-->
+                    <div class="p-4">
+                        <div class="border-2 border-[#8758EA] rounded-xl group hover:bg-[#8758EA] hover:text-white cursor-pointer flex items-center px-4 py-1.5" onclick="getAns('Six','p2')">
+                            
+                            <div class="bg-[#8758EA] lg:w-12 lg:h-12 h-8 w-8 rounded-full flex justify-center items-center group-hover:bg-white lg:w-[7.3%] md:w-[6%] w-[15%]">
+                                <p class="text-white group-hover:text-[#8758EA]">B</p>
+                            </div>
+
+                            <div class="w-[85%] text-center">
+                                <p class="group-hover:text-white lg:text-2xl text-[#8758EA] font-semibold">Six</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm ml-4 hidden" id="p2">Correct Answer</p>
+
+                    <!-- Options C-->
+                    <div class="p-4">
+                        <div class="border-2 border-[#8758EA] rounded-xl group hover:bg-[#8758EA] hover:text-white cursor-pointer flex items-center px-4 py-1.5" onclick="getAns('Eight','p3')">
+                            
+                            <div class="bg-[#8758EA] lg:w-12 lg:h-12 h-8 w-8 rounded-full flex justify-center items-center group-hover:bg-white lg:w-[7.3%] md:w-[6%] w-[15%]">
+                                <p class="text-white group-hover:text-[#8758EA]">C</p>
+                            </div>
+
+                            <div class="w-[85%] text-center">
+                                <p class="group-hover:text-white lg:text-2xl text-[#8758EA] font-semibold">Eight</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm ml-4 hidden" id="p3">Correct Answer</p>
+
+                    <!-- Options D-->
+                    <div class="p-4">
+                        <div class="border-2 border-[#8758EA] rounded-xl group hover:bg-[#8758EA] hover:text-white cursor-pointer flex items-center px-4 py-1.5" onclick="getAns('Ten','p4')">
+                            
+                            <div class="bg-[#8758EA] lg:w-12 lg:h-12 h-8 w-8 rounded-full flex justify-center items-center group-hover:bg-white lg:w-[7.3%] md:w-[6%] w-[15%]">
+                                <p class="text-white group-hover:text-[#8758EA]">D</p>
+                            </div>
+
+                            <div class="w-[85%] text-center">
+                                <p class="group-hover:text-white lg:text-2xl text-[#8758EA] font-semibold">TEN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm ml-4 hidden pb-2" id="p4">Correct Answer</p>
+                </div>
+            </div>
+
+            <!-- Question Box 2 -->
+            <div class="lg:w-6/12 md:w-10/12 w-full pt-10 px-2">
+                <div class="border-2 border-[#8758EA] rounded-2xl">
+                    <div class="bg-[#8758EA] rounded-t-xl py-12 flex justify-center items-center">
+                        <p class="text-white lg:text-xl text-center">How many days in a year?</p>
+                    </div>
+
+                    <!-- Options A-->
+                    <div class="p-4">
+                        <div class="border-2 border-[#8758EA] rounded-xl group hover:bg-[#8758EA] hover:text-white cursor-pointer flex items-center px-4 py-1.5" onclick="getAns(465,'p5')">
+                            <div class="bg-[#8758EA] lg:w-12 lg:h-12 h-8 w-8 rounded-full flex justify-center items-center group-hover:bg-white lg:w-[7.3%] md:w-[6%] w-[15%]">
+                                <p class="text-white group-hover:text-[#8758EA]">A</p>
+                            </div>
+                            <div class="w-[85%] text-center">
+                                <p class="group-hover:text-white lg:text-2xl text-[#8758EA] font-semibold">465</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm ml-4 hidden" id="p5">Wrong Answer</p>
+
+                    <!-- Options B-->
+                    <div class="p-4">
+                        <div class="border-2 border-[#8758EA] rounded-xl group hover:bg-[#8758EA] hover:text-white cursor-pointer flex items-center px-4 py-1.5" onclick="getAns(320,'p6')">
+                            
+                            <div class="bg-[#8758EA] lg:w-12 lg:h-12 h-8 w-8 rounded-full flex justify-center items-center group-hover:bg-white lg:w-[7.3%] md:w-[6%] w-[15%]">
+                                <p class="text-white group-hover:text-[#8758EA]">B</p>
+                            </div>
+
+                            <div class="w-[85%] text-center">
+                                <p class="group-hover:text-white lg:text-2xl text-[#8758EA] font-semibold">320</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm ml-4 hidden" id="p6">Wrong Answer</p>
+
+                    <!-- Options C-->
+                    <div class="p-4">
+                        <div class="border-2 border-[#8758EA] rounded-xl group hover:bg-[#8758EA] hover:text-white cursor-pointer flex items-center px-4 py-1.5" onclick="getAns(365,'p7')">
+                            
+                            <div class="bg-[#8758EA] lg:w-12 lg:h-12 h-8 w-8 rounded-full flex justify-center items-center group-hover:bg-white lg:w-[7.3%] md:w-[6%] w-[15%]">
+                                <p class="text-white group-hover:text-[#8758EA]">C</p>
+                            </div>
+
+                            <div class="w-[85%] text-center">
+                                <p class="group-hover:text-white lg:text-2xl text-[#8758EA] font-semibold">365</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm ml-4 hidden" id="p7">Correct Answer</p>
+
+                    <!-- Options D-->
+                    <div class="p-4">
+                        <div class="border-2 border-[#8758EA] rounded-xl group hover:bg-[#8758EA] hover:text-white cursor-pointer flex items-center px-4 py-1.5" onclick="getAns(720,'p8')">
+                            
+                            <div class="bg-[#8758EA] lg:w-12 lg:h-12 h-8 w-8 rounded-full flex justify-center items-center group-hover:bg-white lg:w-[7.3%] md:w-[6%] w-[15%]">
+                                <p class="text-white group-hover:text-[#8758EA]">D</p>
+                            </div>
+
+                            <div class="w-[85%] text-center">
+                                <p class="group-hover:text-white lg:text-2xl text-[#8758EA] font-semibold">720</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm ml-4 hidden pb-2" id="p8">Wrong Answer</p>
+                    
+                </div>
+            </div>
+
+
+            <!-- Question Box 3 -->
+            <div class="lg:w-6/12 md:w-10/12 w-full pt-10 px-2">
+                <div class="border-2 border-[#8758EA] rounded-2xl">
+                    <div class="bg-[#8758EA] rounded-t-xl py-12 flex justify-center items-center">
+                        <p class="text-white lg:text-xl text-center">Which animal is king of the desert?</p>
+                    </div>
+
+                    <!-- Options A-->
+                    <div class="p-4">
+                        <div class="border-2 border-[#8758EA] rounded-xl group hover:bg-[#8758EA] hover:text-white cursor-pointer flex items-center px-4 py-1.5" onclick="getAns('Camel','p9')">
+                            
+                            <div class="bg-[#8758EA] lg:w-12 lg:h-12 h-8 w-8 rounded-full flex justify-center items-center group-hover:bg-white lg:w-[7.3%] md:w-[6%] w-[15%]">
+                                <p class="text-white group-hover:text-[#8758EA]">A</p>
+                            </div>
+
+                            <div class="w-[85%] text-center">
+                                <p class="group-hover:text-white lg:text-2xl text-[#8758EA] font-semibold">Camel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm ml-4 hidden" id="p9">Correct Answer</p>
+
+                    <!-- Options B-->
+                    <div class="p-4">
+                        <div class="border-2 border-[#8758EA] rounded-xl group hover:bg-[#8758EA] hover:text-white cursor-pointer flex items-center px-4 py-1.5" onclick="getAns('Cow','p10')">
+                            
+                            <div class="bg-[#8758EA] lg:w-12 lg:h-12 h-8 w-8 rounded-full flex justify-center items-center group-hover:bg-white lg:w-[7.3%] md:w-[6%] w-[15%]">
+                                <p class="text-white group-hover:text-[#8758EA]">B</p>
+                            </div>
+
+                            <div class="w-[85%] text-center">
+                                <p class="group-hover:text-white lg:text-2xl text-[#8758EA] font-semibold">Cow</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm ml-4 hidden" id="p10">Wrong Answer</p>
+
+                    <!-- Options C-->
+                    <div class="p-4">
+                        <div class="border-2 border-[#8758EA] rounded-xl group hover:bg-[#8758EA] hover:text-white cursor-pointer flex items-center px-4 py-1.5" onclick="getAns('Tiger','p11')">
+                            
+                            <div class="bg-[#8758EA] lg:w-12 lg:h-12 h-8 w-8 rounded-full flex justify-center items-center group-hover:bg-white lg:w-[7.3%] md:w-[6%] w-[15%]">
+                                <p class="text-white group-hover:text-[#8758EA]">C</p>
+                            </div>
+
+                            <div class="w-[85%] text-center">
+                                <p class="group-hover:text-white lg:text-2xl text-[#8758EA] font-semibold">Tiger</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm ml-4 hidden" id="p11">Wrong Answer</p>
+
+                    <!-- Options D-->
+                    <div class="p-4">
+                        <div class="border-2 border-[#8758EA] rounded-xl group hover:bg-[#8758EA] hover:text-white cursor-pointer flex items-center px-4 py-1.5" onclick="getAns('Lion','p12')">
+                            
+                            <div class="bg-[#8758EA] lg:w-12 lg:h-12 h-8 w-8 rounded-full flex justify-center items-center group-hover:bg-white lg:w-[7.3%] md:w-[6%] w-[15%]">
+                                <p class="text-white group-hover:text-[#8758EA]">D</p>
+                            </div>
+
+                            <div class="w-[85%] text-center">
+                                <p class="group-hover:text-white lg:text-2xl text-[#8758EA] font-semibold">Lion</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm ml-4 hidden pb-2" id="p12">Wrong Answer</p>
+                    
+                </div>
+            </div>
+
+
+            <!-- Question Box 4 -->
+            <div class="lg:w-6/12 md:w-10/12 w-full py-10 px-2">
+                <div class="border-2 border-[#8758EA] rounded-2xl">
+                    <div class="bg-[#8758EA] rounded-t-xl py-12 flex justify-center items-center">
+                        <p class="text-white lg:text-xl text-center">Which is the largest animal in the world?</p>
+                    </div>
+
+                    <!-- Options A-->
+                    <div class="p-4">
+                        <div class="border-2 border-[#8758EA] rounded-xl group hover:bg-[#8758EA] hover:text-white cursor-pointer flex items-center px-4 py-1.5" onclick="getAns('Giraffe','p13')">
+                            
+                            <div class="bg-[#8758EA] lg:w-12 lg:h-12 h-8 w-8 rounded-full flex justify-center items-center group-hover:bg-white lg:w-[7.3%] md:w-[6%] w-[15%]">
+                                <p class="text-white group-hover:text-[#8758EA]">A</p>
+                            </div>
+
+                            <div class="w-[85%] text-center">
+                                <p class="group-hover:text-white lg:text-2xl text-[#8758EA] font-semibold">Giraffe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm ml-4 hidden" id="p13">Wrong Answer</p>
+
+                    <!-- Options B-->
+                    <div class="p-4">
+                        <div class="border-2 border-[#8758EA] rounded-xl group hover:bg-[#8758EA] hover:text-white cursor-pointer flex items-center px-4 py-1.5" onclick="getAns('Blue Whale','p14')">
+                            
+                            <div class="bg-[#8758EA] lg:w-12 lg:h-12 h-8 w-8 rounded-full flex justify-center items-center group-hover:bg-white lg:w-[7.3%] md:w-[6%] w-[15%]">
+                                <p class="text-white group-hover:text-[#8758EA]">B</p>
+                            </div>
+
+                            <div class="w-[85%] text-center">
+                                <p class="group-hover:text-white lg:text-2xl text-[#8758EA] font-semibold">Blue Whale</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm ml-4 hidden" id="p14">Correct Answer</p>
+
+                    <!-- Options C-->
+                    <div class="p-4">
+                        <div class="border-2 border-[#8758EA] rounded-xl group hover:bg-[#8758EA] hover:text-white cursor-pointer flex items-center px-4 py-1.5" onclick="getAns('Elephant','p15')">
+                            
+                            <div class="bg-[#8758EA] lg:w-12 lg:h-12 h-8 w-8 rounded-full flex justify-center items-center group-hover:bg-white lg:w-[7.3%] md:w-[6%] w-[15%]">
+                                <p class="text-white group-hover:text-[#8758EA]">C</p>
+                            </div>
+
+                            <div class="w-[85%] text-center">
+                                <p class="group-hover:text-white lg:text-2xl text-[#8758EA] font-semibold">Elephant</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm ml-4 hidden" id="p15">Wrong Answer</p>
+
+                    <!-- Options D-->
+                    <div class="p-4">
+                        <div class="border-2 border-[#8758EA] rounded-xl group hover:bg-[#8758EA] hover:text-white cursor-pointer flex items-center px-4 py-1.5" onclick="getAns('Bear','p16')">
+                            
+                            <div class="bg-[#8758EA] lg:w-12 lg:h-12 h-8 w-8 rounded-full flex justify-center items-center group-hover:bg-white lg:w-[7.3%] md:w-[6%] w-[15%]">
+                                <p class="text-white group-hover:text-[#8758EA]">D</p>
+                            </div>
+
+                            <div class="w-[85%] text-center">
+                                <p class="group-hover:text-white lg:text-2xl text-[#8758EA] font-semibold">Bear</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm ml-4 hidden pb-2" id="p16">Wrong Answer</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
